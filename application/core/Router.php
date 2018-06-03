@@ -58,31 +58,4 @@ class Router
             View::errorCode(404);
         }
     }
-
-//    public function run()
-//    {
-//        if ($this->match()) {
-//            die("usli smo u prvi if");
-//            $path = 'application\controllers\\'.ucfirst($this->params['controller']).'Controller';
-//            if (class_exists($path)) {
-//                die("usli smo u drugi if");
-//                $action = $this->params['action'].'Action';
-//                if (method_exists($path, $action)) {
-//                    die("usli smo u treci if");
-//                    $controller = new $path($this->params);
-//                    $controller->$action();
-//                } else {
-//                    die("usli smo u treci else");
-//                    View::errorCode(404);
-//                }
-//            } else {
-//                die("usli smo u drugi else");
-//                View::errorCode(404);
-//            }
-//        } else {
-//            die("usli smo u prvi else");
-//            View::errorCode(404);
-//        }
-//    }
-
 }
